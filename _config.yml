@@ -9,7 +9,7 @@ encoding: utf-8
 # Setup
 title:               YCIW Tools
 #tagline:             'foo's website
-description:         Foo's blog...
+description:         A place for developing new YCIW Tools
 url: https://lanyon-plus.sbamin.com
 baseurl: "/tools-yciw"
 urlimg: https://lanyon-plus.sbamin.com/images/
