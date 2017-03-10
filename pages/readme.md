@@ -4,8 +4,85 @@ permalink: /readme/
 title: "README - How to set up lanyon-plus jekyll theme"
 description: "README for setting up lanyon-plus jekyll theme on github pages or custom domain having static website"
 ---
+
+<head>
+
+<meta name="viewport" content="user-scalable=yes, width=1000" />
+    <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy&subset=latin' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+ 
+  <script type="text/javascript">
+  window.rectsIndex = 0;
+ window.rectGroups = document.getElementsByClassName('RectGroup');
+ 
+ window.rectsIndes = 0;
+
+ 
+ window.rectGrouvs = document.getElementsByClassName('RectGrouv');
+  
+  function myCallback(hypeDocument, element, event) {
+    if (isScalePossible()){
+      window.myHypeContainerId = hypeDocument.documentId();
+      $('#' + window.myHypeContainerId).css({
+        '-moz-transform-origin': '0% 0%',
+        '-webkit-transform-origin': '0% 0%',
+        '-ms-transform-origin': '0% 0%',
+        '-o-transform-origin': '0% 0%',                 
+        'transform-origin': '0% 0%',
+        margin: 0
+      });
+      scaleSite();
+      $(window).resize(scaleSite);
+    }
+    return true;
+  }
+  if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+  function scaleSite()
+  {
+    var hypeContainer = $('#' + window.myHypeContainerId);
+    var containerWidth = hypeContainer.width();
+    var containerHeight = hypeContainer.height();
+    var parentWidth = hypeContainer.parent().width();
+    var parentHeight = hypeContainer.parent().height();
+    var scaleWidth = parentWidth / containerWidth;
+    var scaleHeight = parentHeight / containerHeight;
+    var scale = Math.min(scaleWidth, scaleHeight);
+    var left = (containerWidth * scale < parentWidth) ? ((parentWidth - (containerWidth * scale)) / 2) + 'px' : '0px';
+    var top = (containerHeight * scale < parentHeight) ? ((parentHeight - (containerHeight * scale)) / 2) + 'px' : '0px' ;
+    hypeContainer.css({
+        "-moz-transform"    : "scale("+scale+")",
+        "-webkit-transform" : "scale("+scale+")",
+        "-ms-transform"     : "scale("+scale+")",
+        "-o-transform"      : "scale("+scale+")",
+        "transform"         : "scale("+scale+")",
+        "left" : left,
+        "top" : top
+    });
+  }
+  function isScalePossible() 
+  {
+    can = 'MozTransform' in document.body.style;
+    if(!can) can = 'webkitTransform' in document.body.style;
+    if(!can) can = 'msTransform' in document.body.style;
+    if(!can) can = 'OTransform' in document.body.style;
+    if(!can) can = 'transform' in document.body.style;
+    if(!can) can = 'Transform' in document.body.style;
+    return can;
+  }
+</script>
+
+</head>
+
 {% raw %}
 ## lanyon-plus
+
+
+<div id="harmonicrhythm_hype_container" style="margin:auto;position:relative;width:1000px;height:382px;overflow:hidden;" aria-live="polite">
+        <script type="text/javascript" charset="utf-8" src="harmonic_rhythm.hyperesources/harmonicrhythm_hype_generated_script.js?33927"></script>
+    </div>
 
 ### Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [Mark Otto](https://github.com/mdo)
 
