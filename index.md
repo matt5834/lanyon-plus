@@ -7,7 +7,7 @@ description: "Blogging on ...."
 
 ## [lanyon-plus](https://github.com/dyndna/lanyon-plus)
 
-Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
+Based on Matt  theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
 
 * add-ons by [Samir Amin](http://sbamin.com)
 * [Site features]({{ site.url}}/disclosure#i-classfa-fa-thumbs-o-up-credits-for-site-featuresi)
