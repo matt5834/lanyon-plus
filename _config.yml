@@ -10,13 +10,13 @@ encoding: utf-8
 title:               YCIW Tools
 #tagline:             'foo's website
 description:         Foo's blog...
-url: https://lanyon-plus.sbamin.com
-baseurl: "/tools-yciw"
-urlimg: https://lanyon-plus.sbamin.com/images/
+#url: https://lanyon-plus.sbamin.com
+#baseurl: "/tools-yciw"
+#urlimg: https://lanyon-plus.sbamin.com/images/
 ## If you do not have custom domain, comment top three lines, uncomment three lines below and replace dyndna with your github userid and lanyon-plus with your project name. Also, rename CNAME file to CNAME.sample
-#url: https://dyndna.github.io/lanyon-plus
-#baseurl: "/lanyon-plus"
-#urlimg: https://dyndna.github.io/lanyon-plus/images/
+url: https://matt5834.github.io/tools-yciw
+baseurl: "/tools-yciw"
+urlimg: https://matt5834.github.io/tools-yciw/images/
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
@@ -48,8 +48,8 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
+  name:              Matt M
+  url:               https://twitter.com/yciw
   avatar:         foo.png
   #email:           
 
